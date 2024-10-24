@@ -1,0 +1,77 @@
+:root {
+    --blue: rgba(15, 49, 233, 1);
+    --blek: rgba(11, 8, 28, 1);
+    --wight: rgba(244, 255, 254, 1);
+    --turquoise: rgba(35, 214, 225, 1);
+    --dark-blu: rgba(8, 33, 165, 1);
+    --red: rgba(233, 11, 11, 1);
+    --title-font-family: "Blinker", Helvetica;
+    --title-font-weight: 700;
+    --title-font-size: 48px;
+    --title-letter-spacing: 0px;
+    --title-line-height: normal;
+    --title-font-style: normal;
+    --headline-font-family: "Blinker", Helvetica;
+    --headline-font-weight: 400;
+    --headline-font-size: 24px;
+    --headline-letter-spacing: 0px;
+    --headline-line-height: 46px;
+    --headline-font-style: normal;
+    --button-text-font-family: "Anta", Helvetica;
+    --button-text-font-weight: 400;
+    --button-text-font-size: 24px;
+    --button-text-letter-spacing: 0px;
+    --button-text-line-height: normal;
+    --button-text-font-style: normal;
+    --body-font-family: "Blinker", Helvetica;
+    --body-font-weight: 400;
+    --body-font-size: 16px;
+    --body-letter-spacing: 0.8px;
+    --body-line-height: 46px;
+    --body-font-style: normal;
+    --subtitel-font-family: "Blinker", Helvetica;
+    --subtitel-font-weight: 600;
+    --subtitel-font-size: 24px;
+    --subtitel-letter-spacing: 0px;
+    --subtitel-line-height: 24px;
+    --subtitel-font-style: normal;
+    --main-text-font-family: "Blinker", Helvetica;
+    --main-text-font-weight: 400;
+    --main-text-font-size: 16px;
+    --main-text-letter-spacing: 0.8px;
+    --main-text-line-height: 10px;
+    --main-text-font-style: normal;
+    --headline-2-font-family: "Blinker", Helvetica;
+    --headline-2-font-weight: 600;
+    --headline-2-font-size: 24px;
+    --headline-2-letter-spacing: 2.4px;
+    --headline-2-line-height: 20px;
+    --headline-2-font-style: normal;
+    --blue-shadow: 12px 17px 20px 0px rgba(35, 214, 225, 0.5);
+    --system-colors-miscellaneous-tab-unselected: rgba(153, 153, 153, 1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-system-colors-mode="light">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-system-colors-mode="light"] {
+    --system-colors-miscellaneous-tab-unselected: rgba(153, 153, 153, 1);
+  }
+  
+  [data-system-colors-mode="dark"] {
+    --system-colors-miscellaneous-tab-unselected: rgba(126, 126, 126, 1);
+  }
+  
+  [data-system-colors-mode="dark-elevated"] {
+    --system-colors-miscellaneous-tab-unselected: rgba(126, 126, 126, 1);
+  }
+  
