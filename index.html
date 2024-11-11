@@ -13,7 +13,7 @@
         <div class="overlap">
           <div class="overlap-group">
             <div class="ellipse"></div>
-            <div class="sliders"><img class="img" src="./img/Ellipse 11.png" />
+            <div class="sliders"><img class="img" src="./img/sliders/img1.png" id="slide-img"/>
             </div>
             <div class="battons">
               <button class="button-login">
@@ -260,7 +260,16 @@
             <p class="text-wrapper-17">Privacy Policy / Cookie Policy</p>
           </div>
         </div>
-        <img class="header-default" src="./img/header/texst header.png" />
+        <header>
+          <img class="logo" src="./img/header/Vector.svg"/>
+          <h1>arking System</h1>
+          <!--<div>
+            <button>Register</button>
+          </div>-->
+          <menu type="toolbar">menu</menu>
+          <a class="register" href="register">register</a>
+          <a class="login" href="login">login</a>
+        </header>
       </div>
     </div>
   </body>
@@ -272,4 +281,25 @@
   document.querySelector('.button-register').addEventListener('click', function() {
     window.location.href = '/register'; 
   });
+
+  let currentSlide = 0;
+const images = ["./img/sliders/img1.png", "./img/sliders/img2.png", "./img/sliders/img3.png", "./img/sliders/img4.png"]; // Шлях до зображень
+
+function showSlide(index) {
+  const slideImg = document.getElementById("slide-img");
+  slideImg.style.opacity = 0; // Анімація переходу
+
+  setTimeout(() => {
+    slideImg.src = images[index];
+    slideImg.style.opacity = 1;
+  }, 500);
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % images.length;
+  showSlide(currentSlide);
+}
+
+// Запуск автоматичного слайдера
+setInterval(nextSlide, 5000); // Зміна слайдів кожні 3 секунди
 </script>

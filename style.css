@@ -27,7 +27,7 @@
     position: absolute;
     width: 1700px;
     height: 768px;
-    top: 0;
+    top: 10;
     left: 0;
   }
   
@@ -35,8 +35,8 @@
     position: absolute;
     width: 1078px;
     height: 755px;
-    top: 13px;
-    left: 594px;
+    top: 10px;
+    left: 620px;
     background-color: #22d5e1;
     border-radius: 539.02px / 377.3px;
   }
@@ -44,17 +44,18 @@
   .main-page .sliders {
     position: absolute;
     width: 1026px;
-    height: 760px;
+    height: 770px;
     top: 0;
     left: 674px;
   }
   
   .main-page .img {
     position: absolute;
-    width: 672px;
+    width: 1035.191px;
     height: 760px;
     top: 0;
     left: 0;
+    flex-shrink: 0;
   }
   
   .main-page .battons {
@@ -467,7 +468,7 @@
     font-weight: 400;
     color: var(--blek);
     font-size: 36px;
-    text-align: center;
+    text-align: start;
     letter-spacing: 0;
     line-height: 36px;
   }
@@ -508,7 +509,7 @@
     font-weight: 400;
     color: transparent;
     font-size: 36px;
-    text-align: center;
+    text-align: start;
     letter-spacing: 0;
     line-height: 36px;
   }
@@ -709,7 +710,6 @@
     gap: 2px;
     position: relative;
     align-self: stretch;
-    width: 100%;
     flex: 0 0 auto;
   }
   
@@ -805,22 +805,68 @@
   }
   
   .main-page .text-wrapper-17 {
+    text-align: center;
     position: relative;
     align-self: stretch;
     margin-top: -1.00px;
     font-family: "Blinker-Regular", Helvetica;
     font-weight: 400;
     color: var(--system-colors-miscellaneous-tab-unselected);
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0;
-    line-height: 46px;
+    line-height: 45px;
   }
-  
-  .main-page .header-default {
-    position:relative;
-    width: 1440px;
-    height: 60;
-    top: 30;
-    left: 0;
+
+  h1 {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-top: -35px;
+    font-size: 36px;
+  }
+
+  menu {
+    font-size: 36px;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-left: 1310px;
+    margin-top: -65px;
+    
+  }
+
+  .register{
+    font-size: 36px;
+    text-decoration-line: none;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-left: 1180px;
+    margin-top: -78px;
+
+  }
+  .register :hover {
+    color: red;
+    text-decoration-line: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+
+  .login {
+    font-size: 36px;
+    text-decoration-line: none;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-left: 1050px;
+    margin-top: -44px;
+  }
+
+  .login :hover {
+    color: red;
+    text-decoration-line: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
   }
   
